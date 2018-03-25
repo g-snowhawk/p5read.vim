@@ -1,7 +1,7 @@
-P5read
-======
+P5read.vim
+==========
 
-P5read is a simple template insertion plugin.
+P5read.vim is a simple template insertion plugin.
 
 Installation
 ------------
@@ -17,10 +17,10 @@ Installation
 Configuration
 -------------
 
-This is an example `~/.vimrc` configuration for P5read.
+This is an example `~/.vimrc` configuration for P5read.vim.
 
 ```vim
-" Templates installation directory for P5read
+" Templates installation directory for P5read.vim
 let g:p5read#base_directory = '/path/to/directory'
 ```
 
@@ -29,4 +29,4 @@ Usage
 
 1. Your templates into the `g:p5read#base_directory`
 2. Open some file in Vim
-3. Run `:P5read <your template name>`
+3. Run `:PVread <your template name>`
