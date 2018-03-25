@@ -4,14 +4,16 @@
 " License: MIT license
 "=============================================================================
 
-if exists('g:loaded_p5read')
+if &compatible || (exists('g:loaded_p5read') && g:loaded_p5read)
   finish
 endif
 
 let s:save_cpo = &cpo
 set cpo&vim
 
-command! -nargs=1 -complete=customlist,p5read#complete P5read call p5read#load(<f-args>)
+command! -nargs=1 -complete=customlist,p5read#complete#list
+    \ PVread
+    \ call p5read#load(<f-args>)
 
 let g:loaded_p5read = 1
 
